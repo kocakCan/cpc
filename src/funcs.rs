@@ -69,6 +69,12 @@ fn main() {
     let w = plus_two(24);
 
     println!("The value of t is: {w}");
+
+    let arr = [5; 19];
+
+    for number in arr {
+        println!("{number}");
+    }
 }
 
 fn another_function() {
