@@ -227,4 +227,8 @@ fn main() {
     }
 
     println!("LIFTOFF!!!");
+
+    for i in (1..=100) {
+        println!("{i}");
+    }
 }
