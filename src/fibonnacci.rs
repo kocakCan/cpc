@@ -1,6 +1,6 @@
 fn main() {
     println!("Hello, world");
-    println!("The fifth element of Fibonnacci sequence is: {0}", fibonnacci(19));
+    println!("The fifth element of Fibonnacci sequence is: {0}", fibonnacci(5));
 }
 
 fn fibonnacci(n: u32) -> u32 {
