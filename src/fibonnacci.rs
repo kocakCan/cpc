@@ -1,6 +1,14 @@
 fn main() {
-    println!("Hello, world");
-    println!("The fifth element of Fibonnacci sequence is: {0}", fibonnacci(5));
+    println!("Please enter which Fibonnacci number you want to find");
+    let mut input = String::new();
+
+    std::io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+
+    let input: u32 = input.trim().parse().expect("Please enter a number");
+
+    println!("The Fibonnacci number you are looking for is: {0}", fibonnacci(input));
 }
 
 fn fibonnacci(n: u32) -> u32 {
@@ -12,7 +20,7 @@ fn fibonnacci(n: u32) -> u32 {
         let mut current = 1;
 
         // 1, 1, 2, 3, 5, 8, 13
-        while counter < n {
+        while counter <= n {
             current += prior;
             prior = current - prior;
             counter += 1;
